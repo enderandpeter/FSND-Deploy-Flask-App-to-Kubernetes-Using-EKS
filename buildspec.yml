@@ -11,7 +11,7 @@ phases:
       - export PATH=$PWD/:$PATH
       - apt-get -y remove python3.4 python3-dev && \
         apt-get update && \
-        apt-get install -y software-properties-common && \
+        apt-get -y install software-properties-common && \
         add-apt-repository -y ppa:deadsnakes/ppa && \
         apt-get update && \
         apt-get -y install jq python3.6 python3.6-dev && \
